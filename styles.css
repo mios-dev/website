@@ -1,3 +1,4 @@
+/* EVERY PAGE */
 body {
 	background-color: #111;
 	font-family: 'Montserrat', sans-serif;
@@ -7,7 +8,7 @@ h1 {
 	font-size: 40px;
 }
 
-h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 }
@@ -20,6 +21,11 @@ a {
 	color: #6a6a6a;
 }
 
+.highlight {
+	background-color: #1D1D1D;
+	padding: 8px;
+}
+
 #navbar{
 	font-size: 30px;
 }
@@ -28,6 +34,7 @@ a {
 	height: 120px;
 }
 
+/* HOME PAGE */
 #slogan {
 	color: #FAFAFA;
 	font-size: 50px;
@@ -63,4 +70,74 @@ a {
 
 .r1-c2 img{
 	width: 60px;
+}
+
+
+/* INSTALLATION DOC */
+#install-top{
+	width: 50%;
+}
+
+#install-col1{
+	width: calc(24.7%);
+	display: inline-block;
+}
+
+#install-col2{
+	width: calc(50%);
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+#install-col2 td{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.alert{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFA400;
+	border-radius: 3px;
+}
+
+.alert td{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#install-os-select button{
+	width: 140px;
+	height: 50px;
+	font-size: 18px;
+	background-color: #3f3f3f;
+	border: none;
+	color: #FFFFFF;
+}
+
+#install-os-select button:hover{
+	background-color: #4a4a4a;
+}
+
+#install-os-select hr{
+	width: 80%;
+}
+
+#install-os-detailed td{
+	width: calc(50%);
+}
+
+#install-os-detailed button{
+	background-image: linear-gradient(to bottom, #3f3f3f, #383838);
+	border-color: #383838;
+	border-style: solid;
+	height: 50px;
+	color: #FFFFFF;
+	font-size: 15px;
+
+}
+
+#install-col3{
+	width: calc(24.7%);
+	display: inline-block;
 }
