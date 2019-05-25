@@ -1,0 +1,50 @@
+body {
+	background-color: #111
+}
+
+h1 {
+	font-size: 40px;
+}
+
+#navbar img {
+	height: 120px;
+}
+
+#slogan {
+	color: #FAFAFA;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 4px;
+}
+
+#space-1 {
+	height: 50px;
+}
+
+#mockup img {
+	height: 800px;
+}
+
+#space-2 {
+	height: 100px;
+}
+
+#feature {
+	display: inline-block;
+	color: #FAFAFA;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.r1-c1 {
+	padding-left: 16px;
+	width: calc(55%);
+}
+
+.r1-c2 {
+	width: calc(40%);
+}
+
+.r1-c2 img{
+	width: 60px;
+}
