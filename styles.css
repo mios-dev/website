@@ -1,9 +1,27 @@
 body {
-	background-color: #111
+	background-color: #111;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
 	font-size: 40px;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+a {
+	color: #ffffff;
+}
+
+.active {
+	color: #6a6a6a;
+}
+
+#navbar{
+	font-size: 30px;
 }
 
 #navbar img {
@@ -14,7 +32,6 @@ h1 {
 	color: #FAFAFA;
 	font-size: 50px;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 4px;
 }
 
@@ -33,7 +50,6 @@ h1 {
 #feature {
 	display: inline-block;
 	color: #FAFAFA;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .r1-c1 {
