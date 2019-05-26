@@ -128,7 +128,7 @@ a {
 }
 
 #install-os-detailed td{
-	width: calc(50%);
+	width: 50%;
 }
 
 #install-os-detailed button{
@@ -143,6 +143,24 @@ a {
 
 #install-os-detailed img{
 	width: 100%;
+}
+
+.install-windows{
+	margin-top: 10px;
+}
+
+#install-windows-left{
+	display: inline-block;
+	width: 45%;
+}
+
+#install-windows-left img{
+	width: 100%;
+}
+
+#install-windows-right{
+	display: inline-block;
+	width:45%;
 }
 
 #install-col3{
