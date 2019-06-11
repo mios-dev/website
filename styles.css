@@ -33,6 +33,7 @@ a {
 
 #navbar{
 	font-size: 30px;
+	background-color: #111;
 }
 
 #navbar img {
@@ -84,13 +85,18 @@ a {
 	width: calc(40%);
 }
 
+#r2-c1 img {
+	padding-bottom: 30px;
+}
+
 #r2-c2 {
 	width: calc(55%);
 }
 
 /* DOWNLOAD */
-#download-div{
+#download-container{
 	margin-top: 210px;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 #download-latest-button{
@@ -100,7 +106,9 @@ a {
 	font-size: 25px;
 	border-style: solid;
 	border-radius: 4px;
-	border-color: #000000;
+	border-color: rgba(0, 0, 0, 0);
+	background-color: #232323;
+	color: #FAFAFA;
 }
 
 #download-changelog-button{
@@ -108,8 +116,7 @@ a {
 	height: 75px;
 	margin-left: 15px;
 	font-size: 25px;
-	background-opacity: 0.5;
-	background-color: #232323;
+	background-color: rgba(35, 35, 35, 0.3);
 	color: #FFFFFF;
 	border-style: solid;
 	border-radius: 4px;
