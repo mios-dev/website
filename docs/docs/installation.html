@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MiOS :: Installation</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script src="../js/installation.js"></script>
+</head>
+<body>
+	<div id="navbar" align="center">
+		<a href="../index.html"><img src="../img/logo.png" alt="MiOS logo"></img></a>
+	</div>
+	<div id="slogan">
+		<br>
+		Installation Guide
+		<hr id="install-top">
+	</div>
+	<div class="col1">
+		&nbsp;
+	</div>
+	<div class="col2">
+		<h2>Download latest version</h2>
+		If you haven't already, you will need to download MiOS from our <a href="../download.html" target="_blank">download page</a>. You will need to copy the downloaded ISO file to a USB flash drive using the instructions below.
+		<br><br><br>
+		<h2>Recommended System Specifications</h2>
+
+		While we don't have a strict set of minimum system requirements, we recommend at least the following specifications for the best experience:
+		<ul>
+			<li>Recent Intel i3 or comparable dual-core 64-bit processor</li>
+			<li>4 GB of system memory (RAM)</li>
+			<li>Solid state drive (SSD) with 15 GB of free space</li>
+			<li>Internet access</li>
+			<li>1024×768 display</li>
+		</ul><br>
+		<div class="alert">
+			<table>
+				<tr>
+					<td>
+						<i class="fas fa-exclamation-triangle" style="font-size:60px;color:#FFA400;"></i>
+					</td>
+					<td>
+						&nbsp;&nbsp;&nbsp;
+					</td>
+					<td>
+						<h4>Back Up Your Data</h4>
+						<p>Make sure to back your important data up to an external location such as a cloud service or an external hard drive. Installing a new operating system may overwrite your existing data.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br><br><br>
+		<h2>Choose your current operating system:</h2>
+		<div id="install-os-select" align="center">
+			<button onClick="System(1);"><i class="fab fa-windows" style="color:white;"></i>&nbsp;&nbsp;Windows</button>
+			<button onClick="System(2);"><i class="fab fa-apple" style="color:white;"></i>&nbsp;&nbsp;MacOS</button>
+			<button onClick="System(3);"><i class="fab fa-linux" style="color:white;"></i>&nbsp;&nbsp;Linux</button>
+			<hr>
+		</div>
+		<div id="install-os-detailed">
+			<h3>Windows</h3>
+			<h4>Creating an Install Drive</h4>
+			You'll need a USB flash drive with at least 2 GB of free space and a program called Rufus.
+			<div align="center">
+				<br>
+				<a href='http://rufus.ie' target='_blank'>
+					<button>
+						<i class='fab fa-usb' style='color:white;'></i>&nbsp;&nbsp;Download Rufus
+					</button>
+				</a>
+			</div>
+			<div id="install-windows-left" class="install-windows">
+				<img src="../img/installation/windows-rufus.png" alt="Rufus screenshot">
+			</div>
+			<div id="install-windows-right" class="install-windows">
+				<ol>
+					<li>Open Rufus</li>
+					<li>Insert your USB drive and select it in the "Device" list</li>
+					<li>Select "Disk or ISO image" in the "Boot selection" list</li>
+					<li>Click "SELECT" to choose the ISO that you downloaded previously.</li>
+
+					<li>We generate a checksum (or hash sum) for MiOS images so you can verify your downloaded file. This ensures that you've received the full, complete download and that your install image is not corrupted in any way. Click the checksum icon next to "SELECT" and verify that the text next to "SHA256" matches the following hash:
+
+					<p align="center" class="highlight">a8c7b8c54aeb0889bb324<br>5356ffcd95b77e9835ffb5<br>ac56376a3b627c3e1950f</p></li>
+
+					<li>If the hashes match, click "START" and wait for the process to finish.</li>
+				</ol>
+			</div>
+			<h4>Booting from your installation drive</h4>
+			In order to start the installation, you must boot computer from your USB drive. 
+			<ol>
+				<li>Assuming that your computer is still on, start by inserting your install drive and restarting your computer.</li>
+				<li>Most computers will briefly allow you to change the boot order for this boot only by pressing special key - usually <kbd>F12</kbd>, but sometimes <kbd>Esc</kbd> or another key. If you're not sure, check what's written on your screen or in documentation.</li>
+				<li>Press <kbd>F12</kbd> (or the appropriate key) and select the install drive - usually "USB-HDD" or something containing the word "USB", but wording may vary. If you choose the incorrect drive, your computer might boot into your normal OS. Just restart and select different drive in boot menu.</li>
+				<li>Shortly after selecting the appropriate boot drive, you should be presented with the MiOS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process</li>
+			</ol>
+		</div>
+		<div id="install-after">
+			<h2>After Installation</h2>
+			Take this time to read the <a href="learning-the-basics.html">getting started</a> guide to learn about your new operating system.
+		</div>
+	</div>
+	<div class="col3">
+		&nbsp;
+	</div>
+</body>
+</html>
