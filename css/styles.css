@@ -260,14 +260,6 @@ a {
 }
 
 /* DESIGN GUIDELINES DOC */
-.palette{
-	display: inline-block;
-	width: calc(33% - 8px);
-	margin-right: 8px;
-	height: 30px;
-	margin-bottom: 8px;
-}
-
 #dg-col1{
 	width: calc(24.7%);
 	display: inline-block;
@@ -278,6 +270,16 @@ a {
 	display: inline-block;
 	color: #FFFFFF;
 }
+
+#composition table{
+	border-collapse: collapse;
+	width: 80%;
+}
+
+#composition td{
+	text-align: center;
+}
+
 #dg-col3{
 	width: calc(24.7%);
 	display: inline-block;

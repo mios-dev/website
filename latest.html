@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<title>Downloading latest MiOS...</title>
-	<link rel="stylesheet" href="styles.css">
-	<script src="js/dots.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="/js/dots.js"></script>
 	<style>
 		body{
 			background-image: url("img/backgrounds/1.png");
@@ -12,6 +12,24 @@
   			background-size: cover;  
 		}
 	</style>
+	<script>
+    window.dotsGoingUp = true;
+    var dots = window.setInterval( function() {
+        var wait = document.getElementById("wait");
+        if ( window.dotsGoingUp ) 
+            wait.innerHTML += ".";
+        else {
+            wait.innerHTML = wait.innerHTML.substring(1, wait.innerHTML.length);
+            if ( wait.innerHTML === ".")
+                window.dotsGoingUp = true;
+        }
+        if ( wait.innerHTML.length > 15 )
+            window.dotsGoingUp = false;
+
+
+
+        }, 300);
+    </script>
 </head>
 <body>
 	<div class="slogan">
@@ -20,7 +38,7 @@
 		<br>
 		<br>
 		<br>
-		Downloading the latest version of MiOS<span id="dots">...</span>
+		Downloading the latest version of MiOS<br><span id="wait">.</span>
 	</div>
 	<div align="center" style="color:#FAFAFA;">
 		<br><br><br><br><br>
